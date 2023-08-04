@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aayush Srivastava's personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header id="mainHeader">
         <nav>
-            <ol>
+            <ul>
                 <!-- TODO -> Add links to sections-->
                 <li><a href="#">Experiences</a></li>
                 <li><a href="#">Family</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Personal Projects</a></li>
                 <li><a href="#">Contact Me</a></li>
-                <li><a href="#">CV</a></li>
-            </ol>
+                <li><a href="artifacts/Documents/AayushSrivastava_CV.pdf" download="AayushSrivastava_CV.pdf">Resume</a>
+                </li>
+            </ul>
         </nav>
-        <div>
+        <section>
             <!-- Beyond the Screen: Aayush Srivastava's Multidimensional Odyssey -->
             <!-- Beyond Horizons: Aayush Srivastava's Tale of Tech, Finance, and Exploration -->
-            <h1>Tech, Finance & Travel: The Story of Aayush Srivastava's Diverse Journey</h1>
-            <img src="Images/Aayush.jpeg" alt="Image of Aayush Srivastava" width="250px">
+            <div>
+                <img src="artifacts/Images/Aayush.jpeg" alt="Image of Aayush Srivastava" width="250px">
+                <h1>Tech, Travel & Finance : The Story of <span>Aayush Srivastava</span></h1>
+            </div>
             <p>Meet Aayush Srivastava, a talented software developer at Amdocs with a year of Java expertise,
                 currently
                 residing in New Delhi, but originally hailing from the enchanting city of Chandigarh. Beneath the
@@ -45,7 +49,7 @@
                 invitation
                 to
                 join the expedition through his extraordinary passions and ventures.</p>
-        </div>
+        </section>
     </header>
 
 
@@ -64,63 +68,100 @@
             <ol>
                 <li>
                     <div>
-                        <h3><a href="https://www.amdocs.com/about">Amdocs</a><span>Jul 2022 - Present</span></h3>
-                        <p> I Started my Journey at amdocs as a fresher in 2022 stright out of college, they hired me as
-                            a <span>software developer</span>. As a developer i was tasked with development of
-                            automation frameworks using selenium in java, I was kind off disappointed due to me coming
-                            from a skillset of development and them hiring me as a developer but putting me up in a
-                            testing project however MBA bring my ultimate goal i decided to continue. I receieved
-                            training from amdocs in
-                            technologies such as core java, spring, mysql and many more, amdocs built my technical
-                            skillset. I was found to be exceeding
-                            expectations at the company. I even relocated to pune in the month of April to continue
-                            office in offline mode, i met my team offline and everyone was charming, i was a delight to
-                            work with.</p>
-                        <p> Unfortuantely they laid me off in July 2023, due to recession in the US. I'm really greatful
-                            to amdocs for all the skills and experiences i've receieved this past year but its time to
-                            move on now.
-                            I know its going to be challengin but <span>Hey!</span> thats how you grow.
-                        </p>
-                        <ul>
-                            <h4>Acievements and acomplishments</h4>
-                            <li>Developed efficient Selenium-based automation framework in java using Spring, featuring
-                                multithreading, custom reporting, video recording, screenshot capture capabilities
-                                reducing manual efforts by over 80%.</li>
-                            <li>Engineered critical framework modifications by developing 4 new utilities using
-                                JavaScript, TypeScript, Axios for the company's Headless Testing JavaScript framework
-                                improving functionality.</li>
-                            <li>Exceeded role expectations by delivering more than 10 feature demos to global
-                                stakeholders, with 4 accomplished within a 2-month period, 2 times the team’s average
-                                frequency</li>
-                            <li>Facilitated the stability of the organization's CI/CD pipelines on Jenkins. Handling
-                                micro-service deployments using tools such as OpenShift, Kubernetes. Also managed
-                                workflow orchestrations using Camunda ensuring the functionality of application</li>
-                            <li>Adopted new technologies, like Playwright, reducing script execution times by more than
-                                70% and script development times by 40%, improving overall framework efficiency</li>
-                        </ul>
+                        <header>
+                            <h3><a href="https://www.amdocs.com/about">Amdocs</a><span>Jul 2022 - Aug 2023</span></h3>
+                            <img src="artifacts/Images/Logos/Amdocs_Vertical_Logo_MR02-05.svg" alt="Amdocs Logo"
+                                width="150px">
+                        </header>
+                        <main>
+                            <p> I Started my Journey at amdocs as a fresher in 2022 stright out of college, they hired
+                                me as
+                                a <span>software developer</span>. As a developer i was tasked with development of
+                                automation frameworks using selenium in java, I was kind off disappointed due to me
+                                coming
+                                from a skillset of development and them hiring me as a developer but putting me up in a
+                                testing project however MBA bring my ultimate goal i decided to continue. I receieved
+                                training from amdocs in
+                                technologies such as core java, spring, mysql and many more, amdocs built my technical
+                                skillset. I was found to be exceeding
+                                expectations at the company. I even relocated to pune in the month of April to continue
+                                office in offline mode, i met my team offline and everyone was charming, i was a delight
+                                to
+                                work with.</p>
+                            <p> Unfortuantely they laid me off in July 2023, due to recession in the US. I'm really
+                                greatful
+                                to amdocs for all the skills and experiences i've receieved this past year but its time
+                                to
+                                move on now.
+                                I know its going to be challengin but <span>Hey!</span> thats how you grow.
+                            </p>
+                            <ul>
+                                <h4>Acievements and acomplishments</h4>
+                                <li>Developed efficient Selenium-based automation framework in java using Spring,
+                                    featuring
+                                    multithreading, custom reporting, video recording, screenshot capture capabilities
+                                    reducing manual efforts by over 80%.</li>
+                                <li>Engineered critical framework modifications by developing 4 new utilities using
+                                    JavaScript, TypeScript, Axios for the company's Headless Testing JavaScript
+                                    framework
+                                    improving functionality.</li>
+                                <li>Exceeded role expectations by delivering more than 10 feature demos to global
+                                    stakeholders, with 4 accomplished within a 2-month period, 2 times the team’s
+                                    average
+                                    frequency</li>
+                                <li>Facilitated the stability of the organization's CI/CD pipelines on Jenkins. Handling
+                                    micro-service deployments using tools such as OpenShift, Kubernetes. Also managed
+                                    workflow orchestrations using Camunda ensuring the functionality of application</li>
+                                <li>Adopted new technologies, like Playwright, reducing script execution times by more
+                                    than
+                                    70% and script development times by 40%, improving overall framework efficiency</li>
+                            </ul>
 
-                        <hr>
+                            <hr>
+                        </main>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <h3><a href="https://www.mankindpharma.com/company">Mankind Pharma</a><span>Jan 2022 - Jun
-                                2022</span></h3>
-                        <P> --- Internship at Mankind --- </P>
-                        <ul>
-                            <li>Created advanced supply chain data analysis dashboards with Tableau and proprietary
-                                tools, leading to a 15% increase in supply chain responsiveness</li>
-                            <li>Incorporated SQL and TabPy for complex data manipulation and visualization tasks,
-                                producing impactful data-driven insights that guided senior management's strategic
-                                decisions, contributing to a 35% increase in efficiency in decision-making processes
-                            </li>
-                            <li>Led comprehensive functional and requirement analysis of high-performance Field Force
-                                application’s modules and features, identified strengths and opportunities for
-                                improvements and proposed 2 new enhancements to streamline workflow processes boosting
-                                efficiency of company’s field force</li>
-                        </ul>
+                        <header>
+                            <h3><a href="https://www.mankindpharma.com/company">Mankind Pharma</a><span>Jan 2022 - Jun
+                                    2022</span></h3>
+                            <img src="artifacts/Images/Logos/logo.png" alt="Mankind Pharma logo" width="150px">
+                        </header>
+                        <main>
+                            <p> Mankind holds a very special spot in my heart, it was my first ever corporate experience
+                                and the seniors there were delight. They made me feel special along the Journey and
+                                never made me feel i wasnt good enough. Even though i was there for only 6 months but
+                                thoso 6 months made a huge impact on me as a professional as well as an individual. I
+                                was interning here as a information technology intern tasked with data visualization
+                                using tableau, performing ETL on huge datasets and providing analysis dashboards to
+                                upper management. I was also responsible for functional and requirement analysis of
+                                Company's field forca applications, identify its strengths and opportunities for
+                                improvements. I learn't a lot about supply chains and how it funcitons. I made good
+                                friends here even though people were experienced and mentors to me but they always made
+                                me feel like i was part of a big family.
 
-                        <hr>
+                            </p>
+                            <ul>
+                                <h4>Acievements and acomplishments</h4>
+                                <li>Created advanced supply chain data analysis dashboards with Tableau and proprietary
+                                    tools, leading to a 15% increase in supply chain responsiveness</li>
+                                <li>Incorporated SQL and TabPy for complex data manipulation and visualization tasks,
+                                    producing impactful data-driven insights that guided senior management's strategic
+                                    decisions, contributing to a 35% increase in efficiency in decision-making processes
+                                </li>
+                                <li>Led comprehensive functional and requirement analysis of high-performance Field
+                                    Force
+                                    application’s modules and features, identified strengths and opportunities for
+                                    improvements and proposed 2 new enhancements to streamline workflow processes
+                                    boosting
+                                    efficiency of company’s field force</li>
+                            </ul>
+                            <hr>
+                        </main>
+                        <footer>
+                            <h3><a href="#">Internship certificate</a></h3>
+                        </footer>
                     </div>
                 </li>
             </ol>
@@ -133,10 +174,11 @@
             </header>
             <ul>
                 <li>
+                    <!-- Family Card Div-->
                     <div>
                         <header>
                             <h3>My Dad</h3>
-                            <img src="#">
+                            <img src="artifacts/Images/Papa.jpeg" alt="Aayush's Father's Image" width="250px">
                         </header>
                         <p>information about dad</p>
                         <footer>
@@ -151,10 +193,11 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Family Card Div-->
                     <div>
                         <header>
                             <h3>My Mom</h3>
-                            <img src="#">
+                            <img src="artifacts/Images/Mumma.jpeg" alt="Aayush's Mother's Image" width="250px">
                         </header>
                         <p>information about Mom</p>
                         <footer>
@@ -169,10 +212,11 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Family Card Div-->
                     <div>
                         <header>
-                            <h3>My Sistem</h3>
-                            <img src="#">
+                            <h3>My Sister</h3>
+                            <img src="artifacts/Images/Ani.jpeg" alt="Aayush's Sister's Image" width="250px">
                         </header>
                         <p>information about sister</p>
                         <footer>
@@ -187,6 +231,7 @@
                     </div>
                 </li>
                 <li>
+                    <!-- Family Card Div-->
                     <div>
                         <header>
                             <h3>And... Happy</h3>

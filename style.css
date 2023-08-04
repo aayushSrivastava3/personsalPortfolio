@@ -1,0 +1,13 @@
+#mainHeader {
+    background-color: #0C090A;
+    color: #FDF6E4;
+}
+
+#mainHeader div h1 {
+    letter-spacing: 2;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+}
