@@ -6,49 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aayush Srivastava's personal portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4ada643ffb.js" crossorigin="anonymous"></script>
+    <script src="actions.js"></script>
 </head>
 
 <body>
     <header id="mainHeader">
         <nav>
-            <ul>
+            <span class="navItem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i
+                        class="fa-solid fa-rocket"></i></a></span>
+            <ul class="navItem">
                 <!-- TODO -> Add links to sections-->
-                <li><a href="#">Experiences</a></li>
-                <li><a href="#">Family</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Personal Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="artifacts/Documents/AayushSrivastava_CV.pdf" download="AayushSrivastava_CV.pdf">Resume</a>
+                <li class="navLink"><a href="#experiencesSection">Experiences</a></li>
+                <li class="navLink"><a href="#familySection">Family</a></li>
+                <li class="navLink"><a href="#educationSection">Education</a></li>
+                <li class="navLink"><a href="#personalSection">Me</a></li>
+                <li class="navLink"><a href="#socialSection">Socials</a></li>
+                <li class="navLink"><a href="artifacts/Documents/AayushSrivastava_CV.pdf"
+                        download="AayushSrivastava_CV.pdf">Resume</a>
                 </li>
             </ul>
+            <span class="navItem">Aayush Srivastava</span>
         </nav>
         <section>
-            <!-- Beyond the Screen: Aayush Srivastava's Multidimensional Odyssey -->
-            <!-- Beyond Horizons: Aayush Srivastava's Tale of Tech, Finance, and Exploration -->
+            <figure><img src="artifacts/Images/Aayush.jpeg" alt="Image of Aayush Srivastava">
+                <span>Hey that's me</span>
+            </figure>
             <div>
-                <img src="artifacts/Images/Aayush.jpeg" alt="Image of Aayush Srivastava" width="250px">
-                <h1>Tech, Travel & Finance : The Story of <span>Aayush Srivastava</span></h1>
+                <h1>Tech, Travel & Finance : <br> The Story of <span id="nameInHeader">Aayush Srivastava</span></h1>
+                <p>Meet Aayush Srivastava, a talented software developer at Amdocs with a year of Java expertise,
+                    currently
+                    residing in New Delhi, but originally hailing from the enchanting city of Chandigarh. Beneath the
+                    surface of
+                    coding brilliance lies a soul aflame with a passion for finance, aspiring to be an investment banker
+                    and
+                    navigating the labyrinth of numbers and markets with fervor. A seasoned traveler, Aayush has woven a
+                    tapestry of experiences across 20 states in India and three foreign lands, fueling an insatiable
+                    thirst
+                    for
+                    new adventures. Beyond the realms of technology and finance, Aayush is the life of any conversation,
+                    relishing discussions on diverse topics while seeking knowledge in every crevice of information. And
+                    when
+                    the melodies of the world beckon, you'll find Aayush immersed in the euphony of music, a respite
+                    from
+                    life's
+                    bustling symphony. Now, on the digital canvas, Aayush crafts a personal portfolio website, an
+                    invitation
+                    to
+                    join the expedition through his extraordinary passions and ventures.</p>
             </div>
-            <p>Meet Aayush Srivastava, a talented software developer at Amdocs with a year of Java expertise,
-                currently
-                residing in New Delhi, but originally hailing from the enchanting city of Chandigarh. Beneath the
-                surface of
-                coding brilliance lies a soul aflame with a passion for finance, aspiring to be an investment banker
-                and
-                navigating the labyrinth of numbers and markets with fervor. A seasoned traveler, Aayush has woven a
-                tapestry of experiences across 20 states in India and three foreign lands, fueling an insatiable
-                thirst
-                for
-                new adventures. Beyond the realms of technology and finance, Aayush is the life of any conversation,
-                relishing discussions on diverse topics while seeking knowledge in every crevice of information. And
-                when
-                the melodies of the world beckon, you'll find Aayush immersed in the euphony of music, a respite
-                from
-                life's
-                bustling symphony. Now, on the digital canvas, Aayush crafts a personal portfolio website, an
-                invitation
-                to
-                join the expedition through his extraordinary passions and ventures.</p>
         </section>
     </header>
 
@@ -61,7 +68,7 @@
         </section>
 
 
-        <section>
+        <section id="experiencesSection">
             <header>
                 <h2>Experiences</h2>
             </header>
@@ -168,7 +175,7 @@
         </section>
 
 
-        <section>
+        <section id="familySection">
             <header>
                 <h2>Meet My family</h2>
             </header>
@@ -180,7 +187,16 @@
                             <h3>My Dad</h3>
                             <img src="artifacts/Images/Papa.jpeg" alt="Aayush's Father's Image" width="250px">
                         </header>
-                        <p>information about dad</p>
+                        <main>
+                            <p>
+                                <!-- Correct this via CHAT GPT-->
+                                My dad is President Operations at Mankind Pharma. He is a well recognized person in
+                                pharma industry and a master in supply chain. He is one my biggest inspirations, he
+                                started from nothing got to something and not he's everything. He is one of the hardest
+                                working man i have ever seen which also motivates me to push myself out of my comfort
+                                zone. He is mentor to many but also a great loving father.
+                            </p>
+                        </main>
                         <footer>
                             <h4>Social links</h4>
                             <ul>
@@ -199,7 +215,14 @@
                             <h3>My Mom</h3>
                             <img src="artifacts/Images/Mumma.jpeg" alt="Aayush's Mother's Image" width="250px">
                         </header>
-                        <p>information about Mom</p>
+                        <main>
+                            <!-- Correct this via CHAT GPT-->
+                            <p>My mother is a the coolest and the chillest person in the family. She is the absolute
+                                boss of the home, and you can share anything and everthing with her. She is so energetic
+                                that she radiates that to others. Whenever you have a bad mood just talking with her
+                                will lift your spirits up. She is also street smart learnt everthing from experience.
+                                She is humble and down to earth, she has 0 ego and lots of love.</p>
+                        </main>
                         <footer>
                             <h4>Social links</h4>
                             <ul>
@@ -218,7 +241,15 @@
                             <h3>My Sister</h3>
                             <img src="artifacts/Images/Ani.jpeg" alt="Aayush's Sister's Image" width="250px">
                         </header>
-                        <p>information about sister</p>
+                        <main>
+                            <!-- Correct this via CHAT GPT-->
+                            <p>She is currently senior business analyst at Accenture ATCI, She is the first one who i
+                                call whenever i have a doubt or a crisis or even a good news. She has taken care of me
+                                from childhood. She is like my mom when mom is not around. She can be goofy sometimes
+                                but thats what makes her Ani. She is going to be there for you in absolutely every
+                                moment to support you even when you are wrong. She has a beautiful caring personality at
+                                very less people have. </p>
+                        </main>
                         <footer>
                             <h4>Social links</h4>
                             <ul>
@@ -237,17 +268,85 @@
                             <h3>And... Happy</h3>
                             <img src="#">
                         </header>
-                        <p>information about Happy</p>
+                        <main>
+                            <!-- Correct this via CHAT GPT-->
+                            <p>Happy is the light of our home. He is currently the most favored child of us 3. He is
+                                absolutely adorable and has nothing but lots of love to give. Happy changed our lives
+                                when he arrived at our home, our lives went from dark in tough times to happy. He cannot
+                                stand to see you sad he will do anything to brighten your mood up. But yes he is a huge
+                                attention seeker and will not like if my mom or dad loves someone more than him, thats
+                                what makes him special, thats what makes him Happy.</p>
+                        </main>
                         <!-- Send love link -->
                         <footer>
-                            <form>
-                                <label for="sendLoveHappy">Send love to Happy</label>
-                                <input type="checkbox" id="sendLoveHappy" name="sendLoveHappy">
-                            </form>
+                            <div id="sendLoveContainer">
+                                <span>Send love to happy</span>
+                                <i id="sendLoveHeart" class="fa fa-heart fa-border-all"></i>
+                            </div>
                         </footer>
                     </div>
                 </li>
             </ul>
+        </section>
+
+        <section>
+            <header id="educationSection">
+                <h2>Education</h2>
+            </header>
+            <main>
+                <ul>
+                    <li>
+                        <div>
+                            <h3><a href="#">Thapar Institute of Engineering and Technology</a><span>Jul 2018 - Jun
+                                    2022</span></h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3><a href="#">Dikshant Internation School</a><span>Jul 2006 - Jun
+                                    2018</span></h3>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+        </section>
+
+        <section id="personalSection">
+            <header>
+                <h2>Personal life</h2>
+            </header>
+
+            <!-- Possible Carousel element-->
+            <div>
+                <div>
+                    <!-- Hobbies container-->
+                    <h3>Hobbies</h3>
+                </div>
+                <div>
+                    <!-- Travel container-->
+                    <h3>Travel</h3>
+                </div>
+                <div>
+                    <!-- Playlist container-->
+                    <header>
+                        <h3>Music</h3>
+                    </header>
+                    <main>
+                        <h4>My top songs</h4>
+                        <h4>My top artists</h4>
+                        <h4>My top genres</h4>
+                    </main>
+                    <footer>
+                        <a href="#">Spotify paylist link</a>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- Gallery of my photos-->
+            <div>
+                <h3>Photography</h3>
+            </div>
         </section>
 
         <section>
@@ -292,44 +391,7 @@
             </header>
         </section>
 
-        <section>
-            <header>
-                <h2>Personal life</h2>
-            </header>
-
-            <!-- Possible Carousel element-->
-            <div>
-                <div>
-                    <!-- Hobbies container-->
-                    <h3>Hobbies</h3>
-                </div>
-                <div>
-                    <!-- Travel container-->
-                    <h3>Travel</h3>
-                </div>
-                <div>
-                    <!-- Playlist container-->
-                    <header>
-                        <h3>Music</h3>
-                    </header>
-                    <main>
-                        <h4>My top songs</h4>
-                        <h4>My top artists</h4>
-                        <h4>My top genres</h4>
-                    </main>
-                    <footer>
-                        <a href="#">Spotify paylist link</a>
-                    </footer>
-                </div>
-            </div>
-
-            <!-- Gallery of my photos-->
-            <div>
-                <h3>Photography</h3>
-            </div>
-        </section>
-
-        <section>
+        <section id="socialSection">
             <h2>Social</h2>
             <p>Some content/message before i present links</p>
             <h3>Social Links</h3>
@@ -359,6 +421,8 @@
             </aside>
         </section>
     </main>
+
+
     <footer>
         <h2>Made with love by Aayush Srivastava &hearts; </h2>
         <section>

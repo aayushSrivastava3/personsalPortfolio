@@ -1,13 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* :hover {
+    cursor: default;
+}
+
+/*  Main Header Styling */
 #mainHeader {
     background-color: #0C090A;
     color: #FDF6E4;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
-#mainHeader div h1 {
-    letter-spacing: 2;
+#mainHeader h1 {
+    padding-top: 15px;
 }
 
-a {
+#mainHeader nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    display: inline;
+    padding: 10px 20px;
+}
+
+.navLink:nth-of-type(1) {
+    padding-left: 50px;
+}
+
+.navLink a {
     text-decoration: none;
-    font-style: italic;
+    font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Helvetica", "Arial", "sans-serif";
+    font-weight: 475;
+    letter-spacing: 2.6px;
+    color: #F8509F;
+    transition: 0.25s ease-in;
+}
+
+.navItem {
+    padding: 10px 20px;
+}
+
+.navLink :hover {
+    color: #FDF6E4;
+}
+
+#mainHeader section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    padding-bottom: 100px;
+}
+
+#nameInHeader {
+    font-size: 75px;
+    font-family: 'Brush Script MT';
+    font-weight: 100;
+    color: #F8509F;
+    margin-left: 10px;
+}
+
+#mainHeader section div {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mainHeader section p {
+    width: 615px;
+    text-align: justify;
+    line-height: 1.25;
+    padding: 20px 0px 0px 0px;
+}
+
+#mainHeader section figure {
+    width: 300px;
+    background-color: #F8509F;
+    border-radius: 5%;
+    padding: 2.5%;
+    padding-bottom: 1%;
+}
+
+#mainHeader section figure span {
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    border-top: 3px dashed #0C090A;
+    padding-top: 5px;
+}
+
+#mainHeader section figure img {
+    width: 300px;
+    padding-bottom: 15px;
+    border-radius: 5%;
+}
+
+/* ------------------------------------ */
+
+
+ion-icon {
+    fill: transparent;
+    stroke-width: 30;
+    fill: red;
+}
+
+
+#sendLoveHeart {
+    /* color: transparent; */
+}
+
+#sendLoveHeart.active {
+    color: red;
 }
