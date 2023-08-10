@@ -1,3 +1,6 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chakra+Petch:wght@300&family=Great+Vibes&family=Press+Start+2P&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,26 +10,34 @@
     cursor: default;
 }
 
+::selection {
+    background-color: transparent;
+}
+
 /*  Main Header Styling */
 #mainHeader {
-    background-color: #0C090A;
-    color: #FDF6E4;
+    background-color: #264653;
+    color: #a2d2ff;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
 
-#mainHeader h1 {
-    padding-top: 15px;
-}
-
+/* ---- Nav ----*/
 #mainHeader nav {
     display: flex;
     justify-content: space-between;
+    animation: fadeInAnimationNav ease-in-out 1.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.navItem i {
+    color: #f4a261;
 }
 
 .navLink {
-    display: inline;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 .navLink:nth-of-type(1) {
@@ -38,7 +49,7 @@
     font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Helvetica", "Arial", "sans-serif";
     font-weight: 475;
     letter-spacing: 2.6px;
-    color: #F8509F;
+    color: #f4a261;
     transition: 0.25s ease-in;
 }
 
@@ -50,59 +61,127 @@
     color: #FDF6E4;
 }
 
+/* ---- Section ----*/
 #mainHeader section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 7%;
+    margin-top: 5%;
     padding-bottom: 100px;
 }
 
-#nameInHeader {
-    font-size: 75px;
-    font-family: 'Brush Script MT';
-    font-weight: 100;
-    color: #F8509F;
-    margin-left: 10px;
-}
-
+/* ---- Section text ----*/
 #mainHeader section div {
-    padding-left: 5%;
+    font-size: 18px;
+    padding: 0% 3.2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
+    max-width: 650px;
+
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-#mainHeader section p {
-    width: 615px;
+#mainHeader section div h1 {
+    /* When Flex box collapse we need space between image and text*/
+    margin-top: 15px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.75em;
+}
+
+#nameInHeader {
+    font-size: 2.25em;
+    /* TODO -> Change this cursive font */
+    font-family: 'Great Vibes', cursive;
+    font-weight: 100;
+    color: #e9c46a;
+    margin-left: 10px;
+}
+
+#mainHeader section div p {
     text-align: justify;
-    line-height: 1.25;
+    line-height: 115%;
     padding: 20px 0px 0px 0px;
+    font-family: 'Helvetica', 'sans-serif';
+    font-size: 1em;
 }
 
+/* ---- Section Image ----*/
 #mainHeader section figure {
-    width: 300px;
-    background-color: #F8509F;
+    max-width: 300px;
+    background-color: #f4a261;
     border-radius: 5%;
     padding: 2.5%;
     padding-bottom: 1%;
+    flex-grow: 1;
+
+
+    animation: fadeInTransformAnimation ease-in-out 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #mainHeader section figure span {
     display: block;
     box-sizing: border-box;
-    width: 300px;
+    /* Width of the text box below the image -> should be equal to the size of the image*/
+    width: 100%;
     text-align: center;
-    font-size: 25px;
-    border-top: 3px dashed #0C090A;
-    padding-top: 5px;
+    font-size: 1.25em;
+    border-top: 3px dashed #FDF6E4;
+    color: #0C090A;
+    /* Distance between the line and the Text*/
+    padding-top: 10px;
+    /* Distance between the line and the image*/
+    margin-top: 5px;
+    padding-bottom: 2%;
 }
 
 #mainHeader section figure img {
-    width: 300px;
+    width: 100%;
     padding-bottom: 15px;
     border-radius: 5%;
+}
+
+/* Keyframes for the main header section */
+@keyframes fadeInTransformAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(8%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(2.5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInAnimationNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ------------------------------------ */
