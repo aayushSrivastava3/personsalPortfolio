@@ -204,10 +204,6 @@ ion-icon {
 }
 
 
-#sendLoveHeart {
-    /* color: transparent; */
-}
-
 #sendLoveHeart.active {
     color: red;
 }
